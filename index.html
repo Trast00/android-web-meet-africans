@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Android delete account</title>
+</head>
+<body>
+  <div class="max-content flex-center column">
+    <h1>Delete Your Account</h1>
+    <p>Pour supprimer votre compte veiller remplir cet formulaire
+      <br>
+      Votre compte sera entierement supprimer apres 24h.
+      Pour supprimer instanement tout vos données pouvez egalement appuyer sur le bouton supprimer mon compte dans le menu de l'application
+      <br>
+      <br>
+      <strong>Note</strong> : Une fois votre compte supprimer vous ne pourrez plus le récupérer
+    </p>
+    <form id="formDelete"
+      action="https://formspree.io/f/mlekqeow"
+      method="post"
+      class="max-content flex-center column">
+      <input id="email" type="email" name="email" placeholder="email(pour vous confirmer la suppression)" required />
+      <input id="name" type="text" name="name" placeholder="email/numero de telephone (utiliser sur l application)" required />
+      <input id="password" type="password" name="password" placeholder="Mot de passe (utiliser sur l'application)" required />
+      
+      <textarea id="message" name="message" id="message" cols="30" rows="10" placeholder="Mot de passe" class="hidden"></textarea>
+      <div class="flex-center">
+        <button id="btnSubmit" type="submit" class="btn-action">Supprimer mon compte</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
